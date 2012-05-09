@@ -23,7 +23,7 @@ class AuthenticJobsClient(object):
 
   def get_url_for_listing_id(self, listing_id):
     ''' Generates the URL for a listing based on its ID. Includes AJP ID if there is one. '''
-    url = 'http://www.authenticjobs.com/' + listing_id
+    url = 'http://www.authenticjobs.com/jobs/' + listing_id
     if self.ajp_id:
       url = url + '?ajp=' + str(self.ajp_id)
     return url
